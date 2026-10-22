@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest Fields Farm</title>
+    <style>
+        /* --- BASIC SETUP --- */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* --- HEADER & NAV --- */
+        header {
+            background-color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #2e7d32;
+            text-decoration: underline;
+        }
+
+        /* --- MAIN CONTENT AREA --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* --- CARDS --- */
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            flex: 1;
+            padding-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-text {
+            padding: 20px;
+        }
+
+        .card h2 {
+            color: #2e7d32;
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card h3 {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        ul,
+        ol {
+            font-size: 14px;
+            color: #555;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        /* --- BUTTONS --- */
+        .button {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background-color: #1b5e20;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2e7d32;
+            color: white;
+            font-size: 12px;
+            margin-top: 40px;
+        }
+
+        /* --- MOBILE RESPONSIVENESS --- */
+        @media (max-width: 700px) {
+            .cards {
+                flex-direction: column;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🌿 Harvest Fields Farm</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Pyrethrum</a>
+            <a href="#">Cotton</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="hero">
+            <h1>Welcome to Harvest Fields Farm</h1>
+            <p>We promote sustainable farming of pyrethrum and cotton to support agricultural productivity and rural
+                livelihoods.</p>
+        </div>
+
+        <div class="cards">
+
+            <!-- Pyrethrum Card -->
+            <div class="card">
+                <img src="https://cdn.britannica.com/51/161151-050-13346037/Chrysanthemum-cinerariifolium-pyrethrum-insecticide.jpg "
+                    alt="White pyrethrum flowers in a field">
+                <div class="card-text">
+                    <h2>Pyrethrum Farming</h2>
+                    <p>Pyrethrum is grown for its flowers, which are processed to produce natural insecticidal
+                        ingredients.</p>
+
+                    <h3>Farming Activities</h3>
+                    <ul>
+                        <li>Land preparation</li>
+                        <li>Planting seedlings</li>
+                        <li>Weeding and harvesting</li>
+                    </ul>
+                    <a href="#" class="button">Learn About Pyrethrum</a>
+                </div>
+            </div>
+
+            <!-- Cotton Card -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKuWPIzbkuc3IhNcANVGahGkFqY-0YSCYw77VGYWlIoW2OTertNZAV07j&s=10"
+                    alt="Cotton plants ready for harvest">
+                <div class="card-text">
+                    <h2>Cotton Farming</h2>
+                    <p>Cotton is an important fibre crop used in the production of textiles and other products.</p>
+
+                    <h3>Production Stages</h3>
+                    <ol>
+                        <li>Land preparation</li>
+                        <li>Planting seeds</li>
+                        <li>Crop management</li>
+                        <li>Harvesting cotton</li>
+                    </ol>
+                    <a href="#" class="button">Learn About Cotton</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        Harvest Fields Farm | Supporting Sustainable Agriculture
+    </footer>
+
+</body>
+
+</html>
